@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Animal Pedia</title>
+<style>
+body{
+margin:0;
+padding:0;
+font-family:Arial;
+background-color:lightgreen;
+}
+img{
+width:100%;
+height:auto;
+border-radius:10px;
+}
+h1{
+color:Blue;
+}
+.animal-card{
+background:white;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.2);
+padding:20px;
+width:400px;
+text-align:center;
+}
+.animal-card:hover{
+transform:scale(1.05);
+transition:0.3s;
+}
+.container{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+.logo{
+font-size:20px;
+color:Red;
+font-weight:bold;
+}
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background-color:#2c3e50;
+padding:15px;
+}
+.navbar a{
+color:white;
+text-decoration:none;
+margin-left:15px;
+font-weight:bold;
+}
+.btn{
+background-color:#3498db;
+color:white;
+padding:10px 15px;
+border-radius:5px;
+text-decoration:none;
+}
+.btn:hover{
+background-color:#2980b9;
+}
+.footer{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+@media (max-width:768px){
+.container{
+flex-direction:column;
+align-items:center;
+}
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar">
+<div class="logo">
+ANIMAL PEDIA
+</div>
+
+<div class="nav-links">
+
+<a href="About.html" class="btn">About Animals</a>
+<a href="Contact.html" class="btn">For Contact</a>
+
+</div>
+</nav>
+
+<h1>Types of Animals</h1>
+<p>We have covered 4 types of vertebrates animals in this webpage </p>
+
+<div class="container">
+<div class="animal-card">
+
+<ul> 
+<li> Aquatic Animals</li>
+<img src="aquatic.jpg" width="300">
+<p>Aquatic animals are creatures that live in water for all or most of their lives, spanning freshwater (rivers, lakes) and saltwater (oceans) habitats. Examples include vertebrates like fish (sharks, salmon), mammals (dolphins, whales), and reptiles (turtles), alongside invertebrates such as crustaceans (crabs, shrimp), mollusks (octopuses, squid), and cnidarians (jellyfish). </p>
+</div>
+
+<div class="animal-card">
+<li>Reptiles</li>
+<img src="Reptiles.jpg" width="300">
+<p>Reptiles, as commonly defined, are tetrapod vertebrate animals with an ectothermic metabolism and amniotic development. Reptiles traditionally comprise four orders: Testudines, Crocodilia, Squamata and Rhynchocephalia, with about 12,000 extant species listed in the Reptile Database.</p>
+</div>
+
+<div class="animal-card">
+<li>Birds</li>
+<img src="birds.jpg" width="300">
+<p>Birds are a group of warm-blooded theropod dinosaurs constituting the class Aves, characterised by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a strong yet lightweight skeleton.</p>
+</div>
+
+<div class="animal-card">
+<li>Mammals</li>
+</ul>
+<img src="mammals.jpg" width="300">
+<p>A mammal is a vertebrate animal of the class Mammalia. Mammals are characterised by the presence of milk-producing mammary glands for feeding their young, a broad neocortex region of the brain, fur or hair, and three middle ear bones.</p>
+</div>
+</div>
+<footer class="footer">
+<p>@ 2026 ANIMAL PEDIA</p>
+</footer>
+</body>
+</html> 
+

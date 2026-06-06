@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<TITLE>About Animal Pedia</TITLE>
+<style>
+body{
+margin:0;
+padding:0;
+font-family:Arial;
+background-color:lightgreen;
+}
+img{
+width:100%;
+height:auto;
+border-radius:10px;
+}
+H1{
+color:Blue;
+}
+.animal-card{
+background:white;
+border-radius:10px;
+box-shadow:0.2px 10px rgba(0,0,0,0,2);
+padding:20px;
+width:400px;
+text-align:centre;
+}
+.animal-card:hover{
+transform:scale(1.05);
+transition:0.3s;
+}
+.container{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:20px;
+color:Red;
+font-weight:bold;
+}
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background-color:#2c3e50;
+padding:15px;
+}
+.navbar a{
+color:white;
+text-decoration:none;
+margin-left:15px;
+font-weight:bold;
+}
+.btn{
+background-color:#3498db;
+color:white;
+padding:10px 15px;
+border-radius:5px;
+text-decoration:none;
+}
+.btn:hover{
+background-color:#2980b9;
+}
+.footer{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+@media (max-width:768px){
+.container{
+flex-direction:column;
+align-items:center;
+}
+}
+</style>
+</head>
+
+<Body>
+<nav class="navbar">
+<div class="logo">
+ANIMAL PEDIA
+</div>
+
+<div class="navlinks">
+<a href="Home.html" class="btn">Homepage</a>
+<a href="Contact.html" class="btn">For Contact</a>
+</div>
+</nav>
+<div class="container">
+<div class="animal-card">
+<H1>About Animal Pedia</H1>
+<img src="AboutAnimal.png" width="300">
+<p>Animal Pedia is a simple and informative website created to provide knowledge about different types of animals. It covers various categories such as aquatic animals, reptiles, birds, and mammals, along with their basic characteristics and examples.
+
+The purpose of this website is to make learning about animals easy and interesting for everyone. It is designed with a clean layout and user-friendly interface so that users can explore information without difficulty.
+
+This project also represents my learning journey in web development, where I have used HTML and CSS to build a structured and visually appealing website.
+</p>
+</div>
+</div>
+<footer class="footer">
+<p>@ 2026 Animal Pedia</p>
+</footer>
+<button class="btn" onclick="showAnimal()">Show Animal Info</button>
+
+<p id="animalText" style="display:none;">
+Lion is King of Jungle
+</p>
+
+<script>
+function showAnimal(){
+document.getElementById("animalText").style.display = "block";
+}
+</script></script>
+
+</Body>
+
+</html>
